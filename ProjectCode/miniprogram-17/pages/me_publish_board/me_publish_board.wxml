@@ -1,0 +1,7 @@
+<!--pages/me_publish_board/me_publish_board.wxml-->
+<view class="page-title">我发布的求购贴</view>
+<view bindtap="backTome" class="btn-back">返回</view>
+<view class="none"></view>
+<!-- btn_type="publish" list="{{publish_list}}" -->
+<show-list class="page-content" cid_type="board" btn_type="board" list="{{board_list}}"></show-list>
+<view class="decoration" wx:if="{{board_list.length==0}}">空空如也~~~~</view>

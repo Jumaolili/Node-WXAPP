@@ -1,0 +1,18 @@
+<!--pages/chat_room/chat_room.wxml-->
+<view class="wrap">
+  <view class="back" bindtap="backTomychat">
+    <image src="https://jumaolili.icu:443/public/image/goods/back-img.png" class="back-img"></image>
+  </view>
+  <scroll-view scroll-y class="chat" scroll-top="{{scrollTop}}">
+    <view class="list">
+      <view class="chat-news" wx:for="{{notice_list}}" wx:key="item">
+        <view>
+          <image class="new-img" src="https://jumaolili.icu:443/user_src/developper_img/1618498891663_8012612422165211.jpg"></image>
+          <view></view>
+          <text class="new-txt new-text">{{item.content}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+

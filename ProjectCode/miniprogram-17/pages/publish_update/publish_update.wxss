@@ -1,0 +1,174 @@
+/* pages/publish_update/publish_update.wxss */
+/* pages/publish/publish.wxss */
+
+/* top 按钮  */
+.top-btns {
+  /* position */
+  overflow: auto;
+  /* content */
+  width: 100%;
+  border:1rpx solid black;
+}
+
+.btn-cancel {
+  /* position */
+  float: left;
+  /* content */
+  background-color: white;
+
+}
+
+.btn-publish {
+  /* position */
+  float: right;
+  /* content */
+  background-color: yellow;
+  /* text */
+  color: black;
+  font-weight: bolder;
+  border-radius: 50rpx;
+}
+
+/* middle 细节detail */
+
+
+.c_description {
+  /* box */
+  margin: 20rpx 20rpx;
+  /* content */
+  border: 1rpx solid black;
+  width: 95%;
+}
+
+.upload-img {
+  /* box */
+  margin: 20rpx 20rpx;
+  /* content */
+  border: 1rpx solid black;
+  width: 95%;
+}
+
+image {
+  /* content */
+  border: 1rpx solid grey;
+  width: 150rpx;
+  height: 150rpx;
+}
+
+/* middle type控制 */
+.middle-detail {
+  /* poition */
+
+    /* box */
+    margin: 20rpx 20rpx;
+    /* content */
+    border: 1rpx solid black;
+    width: 95%;
+    height: 300rpx;
+    
+}
+
+.detail-title text {
+  /* position */
+  float: left;
+  /* content */
+  height: 46rpx;
+  border: 1rpx solid grey;
+  /* text */
+  line-height: 46rpx;
+  font-weight: bolder;
+  color: grey;
+}
+
+.detail-title {
+  /* content */
+
+  /* position */
+  overflow: hidden;
+}
+
+
+#icon-detail {
+  /* position */
+  float: left;
+  /* content */
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.detail-content {
+  /* box */
+  margin-top: 10rpx;
+  /* content */
+  /* border: 1rpx solid red; */
+  width: 100%;
+}
+
+.c_name {
+  /* position */
+  float: left;
+  display: inline-block;
+  /* content */
+  width: 82%;
+  /* border: 1rpx solid blue; */
+}
+
+label {
+  /*  */
+  /* position */
+  float: left;
+  display: inline-block;
+  /* contetn */
+  height: 60rpx;
+  width: 110rpx;
+  border: 1rpx solid blue;
+  /* text */
+  font-weight: bolder;
+  
+}
+
+.item-name {
+  /* contetn */
+  border: 1rpx solid black;
+  /* position */
+  overflow: auto;
+  /* box */
+  margin-bottom: 20rpx;
+}
+
+
+
+/* bottom 价格price */
+
+.bottom-price {
+  /* box */
+  margin: 20rpx 20rpx ;
+  /* contetn */
+  width: 95%;
+  height: 60rpx;
+  /* border: 1rpx solid black; */
+  /* text */
+  font-weight: bolder;
+  color: orangered;
+  line-height: 60rpx;
+}
+
+.price-img {
+  /* position */
+  float: left;
+  /* content */
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.input-price {
+  
+  /* content */
+  width: 200rpx;
+  /* border: 1rpx solid grey; */
+  /* position */
+  float: right;
+  /* text */
+  font-weight: bolder;
+  text-align: center;
+}

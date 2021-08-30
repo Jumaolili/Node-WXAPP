@@ -1,0 +1,22 @@
+/* components/selector/selector.wxss */
+
+.selector-item {
+  /* content */
+  width: 100%;
+  height: 50rpx;
+
+  /* box */
+  margin: 0;
+  padding: 0;
+}
+
+scroll-view {
+  /* content */
+  width: 100%;
+  height: 200rpx;
+
+  
+  /* box */
+  /* text */
+  text-align: center;
+}

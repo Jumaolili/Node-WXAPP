@@ -1,0 +1,56 @@
+/* components/swiper/swiper.wxss */
+
+.swiper-container {
+  /* box */
+  margin-bottom: 20rpx;
+  /* content */
+  width: 100%;
+  height: 60rpx;
+  
+}
+
+.my-swiper {
+  /* position */
+  overflow: auto;
+  float: right;
+  /* content */
+
+  width: 620rpx;
+  height: 50rpx;
+}
+
+.my-swiper-item {
+  /* box */
+
+  /* position */
+  float: left;
+  /* content */
+  height: 40rpx;
+  text-align: center;
+  background-color: #F7F7F7;
+
+  border-radius:40rpx;
+  /* text */
+  line-height: 40rpx;
+}
+
+.type-text {
+  /* text */
+  font-weight: bolder;
+  color: grey;
+  line-height: 50rpx;
+}
+
+.chosen {
+  /* content */
+  background-color: #FEF6EA;
+  color: orange;
+}
+
+.type {
+  /* content */
+  /* text */
+  font-weight: bolder;
+  color: black;
+  line-height: 60rpx;
+}

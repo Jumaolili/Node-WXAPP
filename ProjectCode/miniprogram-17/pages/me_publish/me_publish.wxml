@@ -1,0 +1,6 @@
+<!--pages/me_publish/me_publish.wxml-->
+<view class="page-title">我发布的物品</view>
+<view bindtap="backTome" class="btn-back">返回</view>
+<view class="none"></view>
+<show-list class="page-content"  cid_type="good" btn_type="publish" list="{{publish_list}}"></show-list>
+<view class="decoration" wx:if="{{publish_list.length==0}}">空空如也~~~~</view>

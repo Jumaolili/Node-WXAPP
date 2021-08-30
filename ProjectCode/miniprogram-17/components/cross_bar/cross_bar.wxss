@@ -1,0 +1,110 @@
+/* components/cross_bar/cross_bar.wxss */
+
+/* item 容器 */
+.list-item {
+  /* position */
+  overflow: hidden;
+  /* contetn */
+  width: 100%;
+  height: 400rpx;
+}
+
+/* top */
+.item-top {
+  /* position */
+  overflow: hidden;
+  /* content */
+  height: 55rpx;
+  width: 100%;
+  border: 1rpx solid grey;
+}
+
+.user_id {
+  /* box */
+  margin-left: 20rpx;
+  /* content */
+  /* text */
+  font-weight: bolder;
+  color: grey;
+  font-size: small;
+}
+
+
+/* middle */
+
+.item-middle {
+  /* box */
+  padding: 20rpx 20rpx;  
+  /* content */
+  height: 160rpx;
+  border: 1rpx solid grey;
+} 
+
+.c_img {
+  
+  /* position */
+  float: left;
+  /* content */
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.c_description {
+  /* box */
+  margin-left: 20rpx;
+  /* position */
+  overflow: auto;
+  float: left;
+
+  /* content */
+  border: 1rpx solid grey;
+  height: 160rpx;
+  width: 72%;
+  /* text */
+  word-break:break-all;
+  color: grey;
+}
+
+.c_name {
+  /* text */
+  font-weight: bold;
+  color: black;
+  text-decoration-line: underline;
+}
+
+
+/* price */
+.c_price {
+  /* box */
+  margin-left: 20rpx;
+  /* text */
+  font-weight: bolder;
+  color: black;
+}
+
+
+
+
+/* bottom */
+.btn-edit {
+  /* box */
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  /* content */
+  color: white;
+  background-color: green;
+}
+
+.btn-remove {
+  /* box */
+  margin-top: 20rpx;
+  margin-left: 100rpx;
+  /* content */
+  color: white;
+  background-color: red;
+}
+
+.remove_like {
+  /* position */
+  float: right;
+}

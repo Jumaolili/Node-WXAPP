@@ -1,0 +1,52 @@
+<view class="container">
+    <!--pages/person_card/person_card.wxml-->
+  <view class="top">
+    <button size="mini" class="return" bindtap="return">返回</button>
+    <text class="top-title">Ta的信息卡</text>
+  </view>
+
+  <view class="img">
+    <image src="{{'https://jumaolili.icu:443'+ta.img_src+'.jpg'}}" class="img-content"></image>
+  </view>
+
+  <view class="middle">
+    
+    <view class="item">
+      <text class="item-title">用户ID</text>
+      <text class="item-content">{{ta.user_id}}</text>
+    </view>
+
+    <view class="item">
+      <text class="item-title">用户名</text>
+      <text class="item-content">{{ta.name}}</text>
+    </view>
+
+    <view class="item">
+      <text class="item-title">联系方式</text>
+      <text class="item-content">{{ta.phonenumber}}</text>
+    </view>
+
+    <view class="item">
+      <text class="item-title">QQ</text>
+      <text class="item-content">{{ta.qqnumber}}</text>
+    </view>
+
+    <view class="item">
+      <text class="item-title">Ta的院系</text>
+      <text class="item-content">{{ta.department}}</text>
+    </view>
+
+    <view class="item">
+      <text class="item-title">Ta的专业</text>
+      <text class="item-content">{{ta.major}}</text>
+    </view>
+
+  </view>
+
+  <view class="bottom">
+    <view class="bottom-btn" bindtap="subscribe">{{is_subscribed==true?'已关注':'关注Ta'}}</view>
+    <view class="bottom-btn" bindtap="talkTota">联系Ta</view>
+    <view class="bottom-btn" bindtap="Ta_publish">Ta的发布</view>
+    <view class="bottom-btn" bindtap="Ta_board">Ta的求购</view>
+  </view>
+</view>

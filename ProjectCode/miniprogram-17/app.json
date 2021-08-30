@@ -1,0 +1,71 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/board/board",
+    "pages/publish/publish",
+    "pages/mychat/mychat",
+    "pages/me/me",
+    "pages/register/register",
+    "pages/repair/repair",
+    "pages/me_publish/me_publish",
+    "pages/me_subscribe/me_subscribe",
+    "pages/me_publish_board/me_publish_board",
+    "pages/ta_publish/ta_publish",
+    "pages/ta_publish_board/ta_publish_board",
+    "pages/me_sold/me_sold",
+    "pages/me_like/me_like",
+    "pages/publish_update/publish_update",
+    "pages/good_detail/good_detail",
+    "pages/board_detail/board_detail",
+    "pages/chat_room/chat_room",
+    "pages/person_card/person_card",
+    "pages/notice/notice",
+    "pages/developper_update/developper_update",
+    "pages/developper_notice/developper_notice"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff9c35",
+    "navigationBarTitleText": "咸鱼",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#ff9c35",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath":"system_icon/index_s.png",
+        "iconPath":"system_icon/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath":"system_icon/mygood_s.png",
+        "iconPath":"system_icon/mygood.png",
+        "pagePath": "pages/board/board",
+        "text": "求购"
+      },
+      {
+        "selectedIconPath":"system_icon/publish_s.png",
+        "iconPath":"system_icon/publish.png",
+        "pagePath": "pages/publish/publish",
+        "text": "发布"
+      },
+      {
+        "selectedIconPath":"system_icon/mychat_s.png",
+        "iconPath":"system_icon/mychat.png",
+        "pagePath": "pages/mychat/mychat",
+        "text": "交流"
+      },
+      {
+        "selectedIconPath":"system_icon/me_s.png",
+        "iconPath":"system_icon/me.png",
+        "pagePath": "pages/me/me",
+        "text": "我"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

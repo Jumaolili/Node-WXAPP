@@ -1,0 +1,53 @@
+<!--index.wxml-->
+
+<!-- top -->
+<view class="top">
+<!-- top--搜索栏 -->
+  <view class="top-searchbar">
+    <form action="" bindsubmit="search_input">
+      <image src="https://jumaolili.icu:443/public/image/goods/search.png" class="top-image"></image>
+      <input maxlength="30" type="text" placeholder="闲时搜一搜..." name="what" value="" class="top-search"/>
+      <button size="mini" class="top-btn" form-type="submit">搜索</button>
+    </form>
+  </view>
+</view>
+
+<!-- top--滚动swiper -->
+<view class="top-swiper">
+    <view class="top-swiper-title">热门商品</view>
+    <swiper autoplay='true' class="swiper-content" display-multiple-items="3">
+      <block wx:for="{{hot_list}}" wx:key="item">
+        <swiper-item class="swiper-item">
+          <view>
+            <image class="hot_img" src="{{'https://jumaolili.icu:443'+item.c_img}}" data-c_id="{{item.c_id}}" bindtap="goTopage"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+<!-- middle -->
+
+<view class="middle">
+  <!-- middle--商品类型swiper -->
+
+  <!-- middle--商品显示 -->
+  <view class="middle-show">
+    <view class="show-title">
+      <my-swiper bindtap="change_isHide" bindmyevent="search_type" isHide="{{isHide}}" list="{{type_list}}" type="类别"></my-swiper>
+    </view>
+    <scroll-view scroll-y="true" class="show-content">
+      <block wx:for="{{all_list}}" wx:key="item">
+        <view class="content-item">
+          <image class="item-img" src="{{'https://jumaolili.icu:443'+item.c_img}}"></image>
+          <view class="goTopage"></view>
+          <image class="goTopage-img" bindtap="goTopage" data-c_id="{{item.c_id}}" src="https://jumaolili.icu:443/public/image/goods/goTopage.png"></image>
+          <view class="item-name">{{item.c_name}}</view>
+          <view class="item-description">{{item.c_description}}</view>
+          <view class="item-price">￥{{item.c_price}}<text style="float:right">{{item.c_want.length}}人想要</text></view>
+          <view class="item-user-id">用户：{{item.user_id}}</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

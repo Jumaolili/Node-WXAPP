@@ -1,0 +1,47 @@
+<!--pages/repair/repair.wxml-->
+<text class="title">修改用户信息</text>
+
+<form action="https://jumaolili.icu:443/repair" methods="post" bindtap="close_list" bindsubmit="submit_change">
+    
+  <view bindtap="change_user_id">
+    <label for="">用户ID：</label>
+    <input  disabled="true" type="text" name="user_id" value="{{user.user_id}}"/>
+  </view>
+  <view>
+    <label for="">用户名：</label>
+    <input name="name" type="text" placeholder="必须填写" value="{{name}}" />
+  </view>
+  <view>
+    <label for="">*联系方式：</label>
+    <input name="phonenumber" maxlength="11" type="number" placeholder="选择填写" value="{{phonenumber}}" />
+  </view>
+  <view>
+    <label for="">*QQ联系方式：</label>
+    <input name="qqnumber" maxlength="13" type="number" placeholder="选择填写" value="{{qqnumber}}" />
+  </view>
+  <view>
+    <label for="">*所属院系：</label>
+    <input name="department" id="department" type="text" placeholder="选择填写" value="{{department}}"  bindtap="department_list"/>
+    <view hidden="{{show_department}}">
+      <selector bindmyevent="myevent" type="department" array="{{alldepartments}}"></selector>
+    </view>
+  </view>
+  <view>
+    <label for="">*所属专业：</label>
+    <input name="major" id="major" type="text" placeholder="选择填写" value="{{major}}" bindtap="major_list"/>
+    <view hidden="{{show_major}}">
+      <selector bindmyevent="myevent" type="major" array="{{allmajors}}"></selector>
+    </view>
+  </view>
+  <view>
+   <label for="">*用户头像图片上传</label>
+   <image  bindtap="choose_img" src="{{change_path?change_path:user?'https://jumaolili.icu:443'+user.img_src+'.jpg':'https://jumaolili.icu:443/public/image/users/test.png'}}"></image>
+  </view>
+  <button class="submit_change" form-type="submit" >提交修改</button>
+</form>
+
+<button class="cancel_change" bindtap="cancel_change">取消修改</button>
+<view class="tip">仅用户名为必填项，其余"*"可供用户自行选择填写</view>
+<canvas canvas-id="canvas" style="width:{{cWidth}}px;height:{{cHeight}}px;position: absolute;left:-1000px;top:-1000px;"></canvas>
+
+

@@ -1,0 +1,12 @@
+<!--components/swiper/swiper.wxml-->
+
+<view class="swiper-container" >
+  <text class="type">{{type}}</text>
+  <swiper display-multiple-items="3" class="my-swiper" >
+    <swiper-item class="my-swiper-item" wx:for="{{list}}" wx:key="item" >
+      <view class="type-text {{item==chosen&&isHide==false?'chosen':''}}" bindtap="choose_item" data-content="{{item}}">
+        {{item}}
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

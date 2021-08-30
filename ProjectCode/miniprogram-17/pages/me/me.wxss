@@ -1,0 +1,238 @@
+/* pages/me/me.wxss */
+
+
+.container {
+  /* content */
+  width: 100%;
+  height: 100%;
+}
+
+/* 上部 信息栏 */
+.top {
+  /* content */
+  width: 100%;
+  height: 400rpx;
+  /* position */
+  position: relative;
+}
+
+.top-me {
+ /* content */
+ width: 100%;
+ height: 200rpx;
+}
+
+.top-me-img {
+  /* content */
+  width: 180rpx;
+  height: 180rpx;
+  
+  border-radius: 90rpx;
+  /* box */
+  margin: 10rpx 10rpx;
+  /* position */
+  float: left;
+}
+
+
+.name {
+  /* text */
+  font-weight: bolder;
+  font-size: large;
+  /* position */
+  position: absolute;
+  top: 20rpx;
+  left: 200rpx;
+  /* box */
+  /* content */
+  /* border:1rpx solid black; */
+}
+
+.user_id {
+  /* contetn */
+  /* border: 1rpx solid black; */
+  /* text */
+  font-weight:bolder;
+  font-size: smaller;
+  color: grey;
+  /* position */
+  position: absolute;
+  left: 200rpx;
+  top: 150rpx;
+}
+
+.user_department {
+  font-weight:bolder;
+  font-size: smaller;
+  color: grey;
+  /* position */
+  position: absolute;
+  left: 200rpx;
+  top: 80rpx;
+}
+
+.user_major {
+  font-weight:bolder;
+  font-size: smaller;
+  color: grey;
+  /* position */
+  position: absolute;
+  left: 200rpx;
+  top: 115rpx;
+}
+
+
+.change_me {
+  /* position */
+  float: right;
+  /* box */
+  margin-right: 10rpx;
+  /* text */
+  text-align: center;
+  font-weight: bolder;
+  line-height:200rpx;
+  color: white;
+  /* content */
+  width: 80rpx;
+  height: 200rpx;
+  background-color: coral;
+}
+
+/* 与信息相关的功能 */
+.top-fns {
+  /* content */
+  width: 100%;
+  height: 150rpx;
+  /* border: 1rpx solid black; */
+  /* position */
+  display: flex;
+}
+
+.top-fns > view {
+  /* position */
+  flex:1;
+  /* content */
+  border: 1rpx solid black;
+  /* text */
+  text-align: center;
+  padding-top: 20rpx;
+}
+
+.collection-num,
+.browser-num,
+.subscribe-num,
+.fan-num {
+  /* text */
+  font-weight: bolder;
+}
+
+
+
+/* 中部 交易信息栏 */
+.middle {
+  /* content */
+  height: 250rpx;
+  width: 100%;
+  /* border: 1rpx solid black; */
+}
+
+.middle-title,
+.bottom-title-1 {
+  /* cntent */
+  height: 40rpx;
+  width: 100%;
+  /* text */
+  font-size: smaller;
+  font-weight: bolder;
+  color: grey;
+  line-height:40rpx;
+}
+
+.middle-fns {
+  /* content */
+  height: 200rpx;
+  width: 100%;
+  border: 1rpx solid black;
+  /* postion */
+  display: flex;
+}
+
+.middle-fns > view {
+  /* position */
+  flex: 1;
+  /* content */
+  border: 1rpx solid grey;
+  text-align: center;
+}
+
+.middle-fns image {
+  /* content */
+  height: 120rpx;
+  width: 120rpx;
+  
+  display: block;
+  /* box */
+  margin: 0 auto;
+}
+
+
+/* 底部 功能栏 */
+.bottom {
+  /* content */
+  width: 100%;
+  height: 400rpx;
+  /* border: 1rpx solid grey; */
+  /* postion */
+  overflow: auto;
+
+}
+
+.bottom-btn {
+  /* content */
+  width: 150rpx;
+  height: 150rpx;
+  /* border: 1rpx solid blue; */
+  /* position */
+  float: left;
+  margin-top: 25rpx;
+  margin-left:28rpx
+}
+
+
+.bottom-btn-img {
+  /* box */
+  margin: 5rpx 35rpx;
+  /* content */
+  width: 80rpx;
+  height: 80rpx;
+ 
+}
+
+.bottom-btn-title {
+  /* text */
+  font-weight: bolder;
+  text-align: center;
+  color: grey;
+}
+
+
+/* login */
+.login-btn {
+  /* box */
+  margin-bottom: 0;
+  /* content */
+  width: 100%;
+  height: 100rpx;
+  background-color: skyblue;
+  border: 1rpx solid skyblue;
+  border-radius: 20rpx;
+  /* text */
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+
+

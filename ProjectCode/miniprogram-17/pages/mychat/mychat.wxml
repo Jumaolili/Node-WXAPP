@@ -1,0 +1,30 @@
+<view class="notice">
+  <view class="notice-title">开发者通知</view>
+  <view class="chat-content" bindtap="get_notice">
+      <image class="ta-img" src="https://jumaolili.icu:443/user_src/developper_img/1618498891663_8012612422165211.jpg"></image>
+      <view class="ta-id" bindtap="get_notice">
+        开发者
+      </view>
+      <view class="ta-message" style="color:blue" bindtap="get_notice" data-ta_id="{{item.ta_id}}">
+        {{content}}
+      </view>
+  </view>
+</view>
+
+<view class="chat">
+  <view class="chat-title">用户消息列表</view>
+  
+  <scroll-view scroll-y="true">
+    <block wx:for="{{chat}}"  wx:key="item">
+      <view class="chat-content" wx:if="{{!item.is_hiden}}" data-ta_id="{{item.ta_id}}">
+        <image class="ta-img" data-ta_id="{{item.ta_id}}" src="{{'https://jumaolili.icu:443'+item.ta_img+'.jpg'}}"></image>
+        <view class="ta-id" data-ta_id="{{item.ta_id}}">与用户【{{item.ta_id}}】的对话</view>
+        <view class="ta-message" bindtap="goTochat" data-ta_id="{{item.ta_id}}">{{item.record[item.record.length-1].item_record}}</view>
+        <view class="hide_talk" bindtap="hide_talk" data-ta_id="{{item.ta_id}}">
+          移除
+        </view>
+      </view>
+    </block>
+
+  </scroll-view>
+</view>

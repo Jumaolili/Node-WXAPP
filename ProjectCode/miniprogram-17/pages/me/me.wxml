@@ -1,0 +1,85 @@
+
+<!-- 我的 --整体页面容器 -->
+
+  <!-- 上部 信息栏 -->
+  <view class="top">
+    <!-- 基本信息 -->
+    <view class="top-me">
+      <image src="{{user?'https://jumaolili.icu:443'+user.img_src+'.jpg':'https://jumaolili.icu:443/public/image/users/test.png'}}" class="top-me-img" bindtap=""></image>
+        <view class="name">{{user?user.name:'未注册'}}{{user?(user.is_developper==true?'【开发者】':'【用户】'):''}}</view>
+        <view class="user_department">院系:{{user?user.department:'未注册'}}</view>
+        <view class="user_major">专业:{{user?user.major:'未注册'}}</view>
+        <view class="user_id">用户ID:{{user?user.user_id:'未注册'}}</view>
+      <view class="change_me" bindtap="change_me" wx:if="{{is_register}}">修改</view>
+
+    </view>
+    <!-- 与信息相关的功能 -->
+    <view class="top-fns">
+      <view class="collection" bindtap="show_like_list">
+        <view class="collection-num">{{user?user.like_list.length:0}}</view>
+        <view>收藏</view>
+      </view>
+      
+      <view class="subscribe" bindtap="show_subscribe_list">
+        <view class="subscribe-num">{{user?user.subscribe.length:0}}</view>
+        <view>关注</view>
+      </view>
+      <view class="fan" bindtap="hideTopub">
+        <view class="fan-num">{{user?user.fans.length:0}}</view>
+        <view>粉丝</view>
+      </view>
+    </view>
+  </view>
+
+<!-- 中部 交易信息栏 -->
+  <view class="middle">
+    <view class="middle-title">我的交易</view>
+    <view class="middle-fns">
+      <view bindtap="me_publish">
+        <image src="../../system_icon/me_publish.png"></image>
+        <view>发布{{publish_list.length}}</view>
+      </view>
+
+      <view bindtap="me_board">
+        <image src="../../system_icon/me_board.png"></image>
+        <view>求购{{board_list.length}}</view>
+      </view>
+
+      <view>
+        <image src="../../system_icon/me_sell.png"></image>
+        <view>卖出{{sold_list.length}}</view>
+      </view>
+      <!-- <view>
+        <image src="../../system_icon/me_bug.png"></image>
+        <view>买到{{buy_list.length}}</view>
+      </view> -->
+    </view>
+  </view>
+
+  <!-- 底部 功能栏 -->
+  <view class="bottom">
+    <view class="bottom-title-1">未开放的功能</view>
+    <view class="bottom-btn" bindtap="developper_update">
+      <image class="bottom-btn-img" src="../../system_icon/bottom-btn1.png"></image>
+      <view class="bottom-btn-title">权限提升</view>
+    </view>
+    <view class="bottom-btn" bindtap="developper_notice">
+      <image class="bottom-btn-img" src="../../system_icon/bottom-btn2.png"></image>
+      <view class="bottom-btn-title">发送通知</view>
+    </view>
+    <view class="bottom-btn">
+      <image class="bottom-btn-img" src="../../system_icon/bottom-btn3.png"></image>
+      <view class="bottom-btn-title">举报</view>
+    </view>
+    <view class="bottom-btn">
+      <image class="bottom-btn-img" src="../../system_icon/bottom-btn4.png"></image>
+      <view class="bottom-btn-title">联系</view>
+    </view>
+
+  </view>
+
+  <!-- 登录 -->
+  <view wx:if="{{!is_register}}" class="login-btn" bindtap="register">
+    点击注册
+  </view>
+

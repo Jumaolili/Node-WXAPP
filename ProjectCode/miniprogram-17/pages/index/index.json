@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-swiper":"/components/swiper/swiper"
+  },
+  "disableScroll":true
+}

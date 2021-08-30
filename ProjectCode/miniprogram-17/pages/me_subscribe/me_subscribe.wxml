@@ -1,0 +1,25 @@
+<!--pages/me_subscribe/me_subscribe.wxml-->
+<view class="top">
+  <view class="">
+    <button class="return" bindtap="return" size="mini">返回</button>
+  </view>
+
+  <view class="title">
+    我的关注
+  </view>
+</view>
+
+<view class="bottom">
+  <scroll-view class="content" scroll-y="true">
+    <block wx:for="{{subscribe_list}}">
+      <view class="item">
+        <image bindtap="goTota" data-ta_id="{{item.user_id}}" class="item-img" src="{{'https://jumaolili.icu:443'+item.img_src+'.jpg'}}"></image>
+        <view class="item-text">
+            <view class="item-name">{{item.name}}</view>
+            <view class="item-id">用户ID {{item.user_id}}</view>
+        </view>
+        <button class="return" size="mini" data-ta_id="{{item.user_id}}" bindtap="subscribe_cancel">取消关注</button>
+      </view>
+    </block>
+  </scroll-view>
+</view>

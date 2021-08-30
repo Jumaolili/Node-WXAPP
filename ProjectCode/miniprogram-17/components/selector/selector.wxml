@@ -1,0 +1,7 @@
+<!--components/selector/selector.wxml-->
+
+<scroll-view scroll-y >
+  <block  wx:for="{{array}}" wx:key="item" >
+    <view class="selector-item" data-type="{{type}}" data-id="{{item}}"  bindtap="choose">{{item}}</view>
+  </block>
+</scroll-view>

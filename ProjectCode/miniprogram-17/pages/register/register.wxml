@@ -1,0 +1,39 @@
+<!--pages/register/register.wxml-->
+<form action="https://jumaolili.icu:443/register" method="post" bindtap="close_list" bindsubmit="submit">
+  <view>
+    <label for="">用户名：</label>
+    <input name="name" type="text"/>
+  </view>
+  <view>
+    <label for="">*联系方式：</label>
+    <input name="phonenumber" type="number" placeholder="未填写"/>
+  </view>
+  <view>
+    <label for="">*QQ号码：</label>
+    <input name="qqnumber" type="number" placeholder="未填写"/>
+  </view>
+  <view>
+    <label >*所属院系：</label>
+    <input name="department" id="department" type="text" placeholder="未选择" value="{{department}}"  bindtap="department_list"/>
+    <view hidden="{{show_department}}">
+      <selector bindmyevent="myevent" type="department" array="{{alldepartments}}"></selector>
+    </view>
+  </view>
+  <view>
+    <label for="">*所属专业：</label>
+    <input name="major" id="major" type="text" placeholder="未选择" value="{{major}}" bindtap="major_list"/>
+    <view hidden="{{show_major}}">
+      <selector bindmyevent="myevent" type="major" array="{{allmajors}}"></selector>
+    </view>
+  </view>
+  <button form-type="submit">提交注册申请</button>
+</form>
+
+<view class="tip">仅用户名为必填项，其余"*"可供用户自行选择填写</view>
+
+
+
+
+
+
+

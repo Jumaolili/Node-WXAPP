@@ -1,0 +1,40 @@
+<!--pages/good_detail/good_detail.wxml-->
+
+
+
+<!-- top 卖家信息-->
+<view class="top">
+  <image bindtap="findTa" data-ta_id="{{seller.user_id}}" data-c_id="{{good.c_id}}" src="{{'https://jumaolili.icu:443'+seller.img_src+'.jpg'}}" class="top-img"></image>
+  <view class="top-seller">
+    <view class="seller-name">
+      {{seller.name}}
+    </view>
+    <view class="seller-id">
+      ID：{{seller.user_id}}
+    </view>
+  </view>
+</view>
+
+<!-- middle 商品内容 -->
+<view class="middle">
+  <view class="c_price">￥{{good.c_price}}</view>
+  <view class="c_description">{{good.c_description}}</view>
+  <view class="c_name">物品名：{{good.c_name}}</view>
+  <view class="c_type">类型：{{good.c_type}}</view>
+  <view class="usage_degree">使用程度：{{good.usage_degree}}</view>
+  <image src="{{'https://jumaolili.icu:443'+good.c_img}}" class="c_img"></image>
+  
+</view>
+
+<!-- bottom 操作btn -->
+<view class="bottom">
+  <view class="btn"  bindtap="backToindex">
+    <image class="btn-img" src="https://jumaolili.icu:443/public/image/users/btn_return.png"></image>
+    <view class="txt">返回</view>
+  </view>
+ 
+  <view class="btn" bindtap="talkToseller">
+    <image class="btn-img" src="https://jumaolili.icu:443/public/image/users/btn_talk.png"></image>
+    <view class="txt">发送信息</view>
+  </view>
+</view>

@@ -1,0 +1,37 @@
+<!--components/cross_bar/cross_bar.wxml-->
+
+<view class="list-container" wx:for="{{list}}" wx:key="item">
+  <block>
+      <view class="list-item">
+        <view class="item-top">
+          <text class="user_id">发布人ID：{{item.user_id}}</text>
+        </view>
+
+        <view class="item-middle">
+          <image class="c_img" bindtap="goTodetail" data-c_id="{{item.c_id}}" data-cid_type="{{cid_type}}" src="{{item.c_img?'https://jumaolili.icu:443'+item.c_img:'https://jumaolili.icu:443/user_src/good_img/none.jpg'}}"></image>
+          <view class="c_description">
+            <text class="c_name">{{item.c_name}}</text>
+            {{item.c_description}}
+          </view>
+        </view>
+
+        <view class="item-pricebar">
+          <text class="c_price">价格：{{item.c_price}}</text>
+        </view>
+
+<!-- 我发布的商品 -->
+        <view class="item-bottom" wx:if="{{btn_type=='publish'}}">
+          <button size="mini" bindtap="edit" data-type="edit" data-c_id="{{item.c_id}}" class="btn-edit">编辑</button>
+          <button size="mini" bindtap="edit" data-type="remove" data-c_id="{{item.c_id}}" class="btn-remove">下架</button>
+        </view>
+<!-- 我收藏得到商品 -->
+        <view class="item-bottom" wx:if="{{btn_type=='like'}}">
+          <button size="mini" bindtap="remove_like" data-c_id="{{item.c_id}}" class="btn-remove remove_like">取消收藏</button>
+        </view>
+<!-- 我发布的求购帖子 -->
+        <view class="item-bottom" wx:if="{{btn_type=='board'}}">
+          <button size="mini" bindtap="remove_board"  data-c_id="{{item.c_id}}" data-c_img="{{item.c_img}}" class="btn-remove">下架求购帖</button>
+        </view>
+    </view>
+  </block>
+</view>

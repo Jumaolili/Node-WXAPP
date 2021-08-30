@@ -1,0 +1,89 @@
+/* pages/mychat/mychat.wxss */
+
+.notice {
+  /* content */
+  height: 200rpx;
+  width: 100%;
+  border:1rpx solid blue;
+}
+
+.chat {
+  /* content */
+  height: 84vh;
+  width: 100%;
+  border: 1rpx solid grey;
+}
+
+
+.chat-content {
+  /* position */
+  position: relative;
+  /* box */
+  margin: 10rpx 10rpx;
+  /* content */
+  width: 95%;
+  height: 140rpx;
+  border: 1rpx solid grey;
+
+}
+
+.ta-img {
+  /* position */
+  float: left;
+  /* box */
+  margin: 10rpx 10rpx;
+  /* content */
+  width: 120rpx;
+  height: 120rpx;
+  border: 1rpx solid grey;
+}
+
+.ta-message,
+.ta-id {
+   /* position */
+   float: left;
+   /* box */
+   margin: 15rpx 10rpx;
+   /* content */
+   width: 520rpx;
+   height: 40rpx;
+  /* text */
+}
+.ta-id {
+  /* text */
+  font-weight: bolder;
+  color: grey;
+}
+
+.ta-message {
+  /* texxt */
+  color: blueviolet;
+}
+
+.ta-message {
+  word-break:break-all;
+  overflow: auto;
+  /* content */
+
+}
+
+scroll-view {
+
+  /* content */
+  height: 80vh;
+
+}
+
+/* 移除按钮 */
+.hide_talk {
+  /* position */
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  /* content */
+ 
+/* text */
+  font-size: large;
+  font-weight: bolder;
+  color: red;
+}

@@ -1,0 +1,72 @@
+/* pages/repair/repair.wxss */
+
+/* pages/register/register.wxss */
+.title {
+  /* position */
+  display: block;
+  /* content */
+  background: steelblue;
+  width: 100%;
+  height: 100rpx;
+  /* text */
+  color: aliceblue;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+view {
+  /* content */
+  border-left: 10rpx solid skyblue;
+  /* box */
+  margin: 30rpx 15rpx;
+}
+
+label {
+  /* content */
+  width: 100rpx;
+  height: 100rpx;
+  /* text */
+  font-size: large;
+  font-weight: bolder;
+  color: grey;
+}
+
+input {
+  /* content */
+  border-bottom: 5rpx solid skyblue;
+}
+
+.tip {
+  /* text */
+  font-size: small;
+  color: grey;
+}
+
+button {
+  /* content */
+  height: 90rpx;
+  /* text */
+  color: white;
+  font-weight: bolder;
+  margin-top: 40rpx;
+}
+
+.submit_change {
+  /* content */
+  background-color: green;
+}
+
+.cancel_change {
+  /* content */
+  background-color: red;
+}
+
+image {
+  /* position */
+  display: block;
+  /* content */
+  width: 150rpx;
+  height: 150rpx;
+  border: 5rpx solid grey;
+}

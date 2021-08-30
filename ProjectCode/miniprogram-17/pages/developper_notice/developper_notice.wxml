@@ -1,0 +1,13 @@
+<!--pages/developper_update/developper_update.wxml-->
+
+<view class="title">
+  发布通知
+</view>
+
+<view class="content">
+  <form action="" class="content-form" bindsubmit="submit">
+    <textarea class="item" type="text" name="content" placeholder="请输入通知" ></textarea>
+    <button class="btn-post" form-type="submit">提交通知</button>
+    <button class="btn-cancel" bindtap="return">取消发布</button>
+  </form>
+</view>

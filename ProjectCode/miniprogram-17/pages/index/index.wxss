@@ -1,0 +1,168 @@
+/* 前往详情页 */
+
+
+
+.goTopage  {
+  /* position */
+  position: absolute;
+  top: 0;
+  left:-1rpx;
+  /* content */
+  border: 50rpx solid;
+  border-color: skyblue transparent transparent skyblue;
+  width: 0rpx;
+  height: 0rpx;
+  opacity: 0.9;
+}
+
+.goTopage-img {
+  /* position */
+  position: absolute;
+  top: 10rpx;
+  left: 0;
+  /* content */
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/* top */
+.top {
+  /* content */
+  width: 100%;
+  height: 85rpx;
+  /* border: 1rpx solid yellow; */
+  background-color: yellow;
+  /* position */
+  overflow: hidden;
+}
+
+.top-image{
+  /* position */
+  float: left;
+  /* content */
+  width:80rpx;
+  height: 80rpx;
+} 
+
+.top-search {
+    /* box */
+    margin-top: 10rpx;
+    /* position */
+    float: left;
+    /* content */
+    height: 65rpx;
+    width: 68%;
+    /* border: 7rpx solid yellow; */
+    background-color: white;
+    /* text */
+    color: grey;
+}
+
+.top-btn {
+  /* box */
+  margin-top: 10rpx;
+  /* contetn */
+  height: 70rpx;
+  background-color: yellow;
+  /* text */
+  line-height: 70rpx;
+  color: grey;
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* top切换 */
+.swiper-content {
+  /* contetn */
+  height: 200rpx;
+}
+
+.top-swiper-title {
+  /* content */
+  background-color: white;
+  /* text */
+  color: grey;
+  font-weight: bolder;
+}
+
+.swiper-item view{
+  /* content */
+  height: 190rpx;
+  /* border: 1rpx solid black; */
+}
+
+.hot_img {
+   /* content */
+   height: 188rpx;
+   width: 250rpx;
+}
+
+/* middle*/
+
+
+.show-content {
+  /* content */
+  /* border: 2rpx solid red; */
+  width: 100%;
+  height: 70vh;
+  column-count: 1;
+  column-gap: 18rpx;
+  /* position */
+  /* box */
+
+}
+
+.content-item {
+  /* box */
+  margin: 15rpx 15rpx;
+  /* position */
+  position: relative;
+  /* float: left; */
+  display: inline-block;
+  break-inside: avoid;
+  overflow: auto;
+  /* content */
+  width: 45%;
+  /* border: 1rpx solid skyblue; */
+  border-radius: 30rpx;
+  background-color: white;
+}
+
+.item-img {
+  /* content */
+  width: 98%;
+  height: 300rpx;
+  /* border: 1rpx solid black; */
+  /*  */
+}
+
+.item-description {
+  /* position */
+  overflow: auto;
+  /* text */
+  word-break:break-all;
+  /* content */
+  width: 98%;
+  max-height: 150rpx;
+  /* border: 1rpx solid black; */
+}
+
+.item-price {
+   /* content */
+   width: 98%;
+   /* border: 1rpx solid black; */
+}
+
+.item-user-id {
+   /* content */
+   width: 98%;
+   /* border: 1rpx solid black; */
+   /* text */
+   color: grey;
+   font-size: 30rpx;
+   font-weight: bolder;
+}
+
+
+
+

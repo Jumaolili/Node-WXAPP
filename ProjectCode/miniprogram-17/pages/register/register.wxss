@@ -1,0 +1,31 @@
+/* pages/register/register.wxss */
+
+view {
+  /* content */
+  border-left: 10rpx solid skyblue;
+  /* box */
+  margin: 30rpx 15rpx;
+}
+
+label {
+  /* content */
+  width: 100rpx;
+  height: 100rpx;
+  /* text */
+  font-size: large;
+  font-weight: bolder;
+  color: grey;
+}
+
+input {
+  /* content */
+  border-bottom: 5rpx solid skyblue;
+}
+
+.tip {
+  /* text */
+  font-size: small;
+  color: grey;
+}
+
+

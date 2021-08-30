@@ -1,0 +1,49 @@
+/* pages/developper_update/developper_update.wxss */
+
+.title {
+  /* content */
+  width: 100%;
+  height: 100rpx;
+  background-color: skyblue;
+  /* text */
+  text-align: center;
+  line-height: 100rpx;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.content {
+  /* content */
+  width: 100%;
+  height: 400rpx;
+}
+
+input {
+    /* content */
+    height: 100rpx;
+    border-left: 5rpx solid skyblue;
+    border-bottom: 5rpx solid skyblue;
+}
+
+.btn-post {
+  /* position */
+  float: right;
+  /* content */
+  background-color: green;
+  /* text */
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.btn-cancel {
+  /* position */
+  float: left;
+  /* content */
+  background-color: red;
+  /* text */
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+}

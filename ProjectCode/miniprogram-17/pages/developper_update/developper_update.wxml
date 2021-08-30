@@ -1,0 +1,13 @@
+<!--pages/developper_update/developper_update.wxml-->
+
+<view class="title">
+  请输入开发者密匙
+</view>
+
+<view class="content">
+  <form action="" class="content-form" bindsubmit="submit">
+    <input type="text" name="key" placeholder="请输入密匙"/>
+    <button class="btn-post" form-type="submit">提交密匙</button>
+    <button class="btn-cancel" bindtap="return">取消提交</button>
+  </form>
+</view>

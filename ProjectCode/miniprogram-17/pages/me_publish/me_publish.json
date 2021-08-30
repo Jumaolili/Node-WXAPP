@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "show-list":"/components/cross_bar/cross_bar"
+  }
+}

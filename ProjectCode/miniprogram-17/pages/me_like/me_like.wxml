@@ -1,0 +1,6 @@
+<!--pages/me_like/me_like.wxml-->
+<view class="page-title">我收藏的物品</view>
+<view bindtap="backTome" class="btn-back">返回</view>
+<view class="none"></view>
+<show-list class="page-content"  btn_type="like" list="{{like_list}}"></show-list>
+<view class="decoration" wx:if="{{like_list.length==0}}">空空如也~~~~</view>

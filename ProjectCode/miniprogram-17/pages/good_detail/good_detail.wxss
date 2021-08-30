@@ -1,0 +1,153 @@
+/* pages/good_detail/good_detail.wxss */
+
+/* top */
+
+.top {
+  /* position */
+  overflow: hidden;
+  /* content */
+  width: 100%;
+  height: 150rpx;
+  /* border: 1rpx solid black; */
+}
+
+.top-img {
+  /* position */
+  float: left;
+  /* content */
+  width: 140rpx;
+  height: 140rpx;
+  /* border: 1rpx solid black; */
+  /* box */
+  margin: 5rpx 5rpx ;
+}
+.top-seller {
+    /* position */
+    float: left;
+    /* content */
+    width: 75%;
+    height: 140rpx;
+    /* border: 1rpx solid black; */
+    /* box */
+    margin: 5rpx 5rpx ;
+}
+
+.seller-name {
+  /* content */
+  /* text */
+  font-weight: bolder;
+  color: black;
+  font-size: larger;
+  /* box */
+  margin: 10rpx 10rpx;
+}
+
+.seller-id {
+  /* content */
+  /* text */
+  font-weight: bolder;
+  color: grey;
+  font-size: smaller;
+  /* box */
+  margin: 10rpx 10rpx;
+}
+
+
+/* middle 商品内容 */
+.middle {
+  /* box */
+  margin-bottom: 120rpx;
+}
+
+.c_img {
+  /* content */
+  width: 95%;
+  height: 800rpx;
+  /* border: 1rpx solid grey; */
+  /* box */
+  margin: 15rpx 15rpx;
+}
+
+.c_price {
+  /* text */
+  font-weight: bolder;
+  color: orangered;
+  font-size: xx-large;
+  /* border: 1rpx solid black; */
+  /* box */
+  margin: 15rpx 15rpx;
+}
+
+.c_description {
+  /* contetn */
+  color: grey;
+  /* border: 1rpx solid black; */
+  /* text */
+  font-size: x-large;
+  word-break:break-all;
+  /* box */
+  margin: 15rpx 15rpx;
+}
+
+.c_type ,
+.c_name ,
+.usage_degree {
+  /* content */
+  /* border: 1rpx solid black; */
+  /* text */
+  font-size: larger;
+  color: black;
+  font-weight: bolder;
+  /* box */
+  margin: 15rpx 15rpx;
+}
+
+
+/* bottom */
+.bottom {
+  /* postion */
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  /* contetn */
+  width: 100%;
+  height: 100rpx;
+  /* border: 1rpx solid black; */
+  background-color: white;
+}
+
+.btn-img {
+  /* box */
+  margin: 0 52rpx;
+  /* content */
+  width: 80rpx;
+  height: 50rpx;
+  /* border: 1rpx solid black; */
+}
+
+.btn {
+  /* position */
+  flex: 1;
+  /* content */
+  /* border: 1rpx solid black; */
+  /* box */
+
+}
+
+.txt {
+  /* content */
+  height: 25rpx;
+  line-height: 25rpx;
+  text-align: center;
+  /* text */
+  font-weight: bolder;
+  font-size: small;
+  color: skyblue;
+}
+
+.liked,
+.wanted {
+  color: #d81e06
+}
+
+

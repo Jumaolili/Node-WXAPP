@@ -1,0 +1,49 @@
+<!--pages/publish/publish.wxml-->
+<form action="https://jumaolili.icu:443/publish" bindsubmit="submit_form">
+<!-- 按钮 取消 发布 -->
+  <view class="top-btns">
+    <button size="mini" class="btn-cancel" bindtap="cancel_form">取消</button>
+    <button size="mini" class="btn-cancel" bindtap="switch_type">切换发布</button>
+    <button wx:if="{{publish_type=='good'}}" size="mini" form-type="submit" class="btn-publish">发布二手物品</button>
+    <button wx:if="{{publish_type=='board'}}" size="mini" form-type="submit" class="btn-publish">发布求购贴</button>
+  </view>
+  
+<!-- 商品概述 image上传 -->
+  <view class="middle-content">
+    <textarea name="c_description" id="" class="c_description" cols="30" rows="10" placeholder="{{publish_type=='good'?'说说入手渠道，转手原因...':'说说你对求购物品的具体细节要求'}}"></textarea>
+    <view class="upload-img"> 
+      <view>{{publish_type=='good'?'商品图片上传':'求购商品样品图片上传'}}</view>
+      <image bindtap="choose_img" src="{{change_path?change_path:'https://jumaolili.icu:443/public/image/goods/choose_img.png'}}"></image>
+    </view>
+  </view>
+
+<!-- 商品 type 选择 -->
+  <view class="middle-detail">
+    <view class="detail-title">
+      <image id="icon-detail" src="https://jumaolili.icu:443/public/image/goods/icon_detail.png"></image>
+      <text>/分类/名称/新旧程度</text>
+    </view>
+
+    <view class="detail-content">
+      <view class="content-item" >
+        <view class="item-name"><label for="c_name">名称</label><input id="c_name" class="c_name" type="text" name="c_name" placeholder="必须填写"/></view>
+        <my-swiper bindmyevent="myevent" list="{{type_list}}" type="类别"></my-swiper>
+        <my-swiper bindmyevent="myevent" list="{{usage_list}}" type="新旧"></my-swiper>
+      </view>
+    </view>
+    
+  </view>
+
+<!-- 价格设置 -->
+  <view class="bottom-price">
+    <view class="price-title">
+      <image class="price-img" src="https://jumaolili.icu:443/public/image/goods/rmb.png"></image>
+      {{publish_type=='good'?'价格':'期待求购价格'}}
+      <input class="input-price" type="number" name="c_price" placeholder="0"/>
+    </view>
+    
+  </view>
+
+</form>
+
+<canvas canvas-id="canvas" style="width:{{cWidth}}px;height:{{cHeight}}px;position: absolute;left:-1000px;top:-1000px;"></canvas>

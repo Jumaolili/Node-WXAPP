@@ -1,0 +1,49 @@
+<!--pages/publish_update/publish_update.wxml-->
+<!--pages/publish/publish.wxml-->
+<form action="https://jumaolili.icu:443/publish_update" bindsubmit="submit_form">
+<!-- 按钮 取消 发布 -->
+  <view class="top-btns">
+    <button size="mini" class="btn-cancel" bindtap="cancel_form">取消</button>
+    <button size="mini" form-type="submit" class="btn-publish">修改</button>
+  </view>
+  
+<!-- 商品概述 image上传 -->
+  <view class="middle-content">
+    <textarea name="c_description" id="" class="c_description" cols="30" rows="10" value="{{good.c_description}}" placeholder="说说入手渠道，转手原因..."></textarea>
+    <view class="upload-img"> 
+      <view>商品图片上传</view>
+      <image bindtap="choose_img" src="{{change_path}}"></image>
+    </view>
+  </view>
+
+<!-- 商品 type 选择 -->
+  <view class="middle-detail">
+    <view class="detail-title">
+      <image id="icon-detail" src="https://jumaolili.icu:443/public/image/goods/icon_detail.png"></image>
+      <text>/分类/名称/新旧程度</text>
+    </view>
+
+    <view class="detail-content">
+      <view class="content-item" >
+        <view class="item-name"><label for="c_name">名称</label><input id="c_name" class="c_name" type="text" name="c_name" placeholder="必须填写" value="{{good.c_name}}"/></view>
+        <my-swiper bindmyevent="myevent" haschosen="{{good.c_type}}" list="{{type_list}}" type="类别"></my-swiper>
+        <my-swiper bindmyevent="myevent" haschosen="{{good.usage_degree}}" list="{{usage_list}}" type="新旧"></my-swiper>
+      </view>
+    </view>
+    
+  </view>
+
+<!-- 价格设置 -->
+  <view class="bottom-price">
+    <view class="price-title">
+      <image class="price-img" src="https://jumaolili.icu:443/public/image/goods/rmb.png"></image>
+      价格
+      <input class="input-price" value="{{good.c_price}}" type="number" name="c_price" placeholder="0"/>
+    </view>
+    
+  </view>
+
+</form>
+
+<canvas canvas-id="canvas" style="width:{{cWidth}}px;height:{{cHeight}}px;position: absolute;left:-1000px;top:-1000px;"></canvas>
+
